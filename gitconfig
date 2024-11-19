@@ -1,0 +1,16 @@
+TODO: PS1 color by folder
+TODO: PS1 branch name, time
+TODO: mongosh color of `dbname>`
+
+[alias]
+        co = checkout
+        c = commit
+        pul = pull
+        # Git remove local branches that have no remote
+        delete-gone-branches = "!git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D"
+        # Git log local commits (https://stackoverflow.com/a/3338774/12056841) 
+        ll = log --branches --not --remotes
+        # Git log clean
+        lc = log --oneline --graph
+        # Git log pretty
+        lp = "log --pretty=\"%C(Yellow)%h  %C(reset)%ad (%C(Green)%cr%C(reset))%x09 %C(Cyan)%an: %C(reset)%s\""
