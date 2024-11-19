@@ -1,6 +1,6 @@
-TODO: PS1 color by folder
-TODO: PS1 branch name, time
-TODO: mongosh color of `dbname>`
+TODO: PS1 color by folder  
+TODO: PS1 branch name, time  
+TODO: mongosh color of `dbname>`  
 
 [alias]
         co = checkout
