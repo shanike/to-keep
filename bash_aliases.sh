@@ -2,6 +2,8 @@
 alias fs="nautilus . &"
 alias perc='upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"'
 alias cdd="cd ../../"
+alias c="cd ../"
+alias kill8080="kill -9 $(lsof -t -i tcp:8080)"
 
 # GIT
 alias gs="git status"
