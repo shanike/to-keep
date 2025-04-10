@@ -17,7 +17,7 @@ alias pnex="pn exec"
 alias d="pn dev"
 
 # AWS
-alias awsmfa=". ~/aws_script/aws_mfa.sh"
+alias awsmfa=". ~/aws_script/aws_mfa.sh shani_device"
 
 # CURSOR
 alias cursor="~/Downloads/Cursor-0.48.7-x86_64.AppImage --no-sandbox"
