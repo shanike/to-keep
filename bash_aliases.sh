@@ -15,3 +15,6 @@ alias gll="git ll"
 alias pn="pnpm"
 alias pnex="pn exec"
 alias d="pn dev"
+
+# CURSOR
+alias cursor="~/Downloads/Cursor-0.48.7-x86_64.AppImage --no-sandbox"
