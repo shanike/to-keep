@@ -1,0 +1,18 @@
+// ==UserScript==
+// @name         Open University Login
+// @namespace    
+// @version      2024-11-14
+// @description  
+// @author       
+// @match        https://sso.apps.openu.ac.il/login*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=ac.il
+// @grant        none
+// @run-at        documemt-idle
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    document.getElementById("p_mis_student").value="xxxxxxxxx"
+    console.log(document.getElementById("p_mis_student"))
+})();
