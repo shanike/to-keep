@@ -1,0 +1,31 @@
+// ==UserScript==
+// @name         Hebrew Tab Name
+// @namespace    https://alhatorah.org/
+// @version      2026-01-27
+// @description  
+// @author       You
+// @match        https://*.alhatorah.org/*
+// @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+console.log("hi")
+    let hebrew = "";
+    let start = -1;
+    let end = document.title.length+1;
+    for (const i in document.title) {
+        const letter = document.title[i];
+        if (start < 0) {
+            if (/[א-ת]/.test(letter)) {
+                start = i;
+            }
+        }
+        else if (end > document.title.length && /[a-z]/.test(letter)) {
+            end = i;
+        }
+    }
+    console.log(document.title, start, end)
+    document.title = document.title.slice(start, end);
+})();
