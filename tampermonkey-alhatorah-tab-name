@@ -26,5 +26,8 @@
             end = i;
         }
     }
-    document.title = document.title.slice(start, end);
+    let newTitle = document.title.slice(start, end);
+    let hostname = window.location.hostname;
+    let subdomain = hostname.split(".")[0];
+    document.title = `${newTitle} (${subdomain})`;
 })();
